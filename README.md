@@ -23,11 +23,11 @@ The first Lambda function also publishes order notifications through Amazon SNS.
 
 ## Example Output
 
-S3 object path:
+**S3 object path:**
 
 `s3://chandana-order-data-20261016/orders/ORD1006.json`
 
-Example JSON:
+**Example JSON:**
 
 ```json
 {
@@ -53,7 +53,7 @@ Example JSON:
 
 The pipeline was tested using sample order records. CloudWatch logs confirmed that `OrderStreamProcessor` sent order `ORD1006` to SQS and published an SNS notification. The corresponding JSON object was verified in S3.
 
-## Region
+## AWS Region
 
 Asia Pacific (Sydney) — `ap-southeast-2`
 
@@ -68,3 +68,17 @@ Asia Pacific (Sydney) — `ap-southeast-2`
 ## Learning Outcomes
 
 This project demonstrates practical knowledge of AWS serverless services, event-driven architectures, data ingestion, asynchronous processing, JSON handling, IAM permissions, and cloud monitoring.
+
+## Project Screenshots
+
+### 1. DynamoDB Orders Table
+![DynamoDB Orders Table](screenshots/1.%20DynamoDB%20Orders%20Table.png)
+
+### 2. Lambda Processing Logs
+![Lambda Processing Logs](screenshots/2.%20Lambda%20Processing%20Logs.png)
+
+### 3. S3 Output Files
+![S3 Output Files](screenshots/3.S3%20Output%20Files.png)
+
+### 4. SNS Email Notification
+![SNS Email Notification](screenshots/4.SNS%20Email%20Notification.jpg)
