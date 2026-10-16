@@ -82,3 +82,9 @@ This project demonstrates practical knowledge of AWS serverless services, event-
 
 ### 4. SNS Email Notification
 ![SNS Email Notification](screenshots/4.SNS%20Email%20Notification.jpg)
+
+
+
+## Architecture Diagram
+
+View the [complete AWS architecture diagram](architecture.md).
